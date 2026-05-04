@@ -1120,19 +1120,6 @@ body.nav-open .nav-toggle-bar:last-child {
   min-width: 0;
 }
 
-@media (min-width: 560px) {
-  .join-contact {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem 1.25rem;
-    align-items: stretch;
-  }
-
-  .join-strip {
-    grid-column: 1 / -1;
-  }
-}
-
 .join-card {
   display: flex;
   flex-direction: column;
@@ -1144,7 +1131,6 @@ body.nav-open .nav-toggle-bar:last-child {
   background: var(--color-bg);
   text-decoration: none;
   color: inherit;
-  min-height: 100%;
   min-width: 0;
   width: 100%;
   transition: border-color 0.22s ease, transform 0.22s var(--ease-out), box-shadow 0.22s ease;
@@ -1225,11 +1211,14 @@ body.nav-open .nav-toggle-bar:last-child {
 }
 
 .join-card-title {
-  font-size: 1.2rem;
+  font-size: clamp(0.92rem, 1.15vw + 0.78rem, 1.2rem);
   font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--color-text);
-  word-break: break-word;
+  line-height: 1.25;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 .join-card-desc {
@@ -1240,8 +1229,8 @@ body.nav-open .nav-toggle-bar:last-child {
 }
 
 .join-card-cta {
-  margin-top: auto;
-  padding-top: 0.65rem;
+  margin-top: 0.35rem;
+  padding-top: 0.5rem;
   font-size: 0.82rem;
   font-weight: 600;
   color: var(--color-accent);
@@ -1250,6 +1239,28 @@ body.nav-open .nav-toggle-bar:last-child {
 
 .join-card-email .join-card-cta {
   color: rgba(var(--rgb-gold), 0.95);
+}
+
+/* Two columns + equal-height cards (CTAs align to bottom in the row) */
+@media (min-width: 700px) {
+  .join-contact {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 1.25rem;
+    align-items: stretch;
+  }
+
+  .join-strip {
+    grid-column: 1 / -1;
+  }
+
+  .join-card {
+    min-height: 100%;
+  }
+
+  .join-card-cta {
+    margin-top: auto;
+  }
 }
 
 .join-strip {
