@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Pakistan Student Association — community, culture, and support for Pakistani students on campus."
+    />
+    <title>Pakistan Student Association</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a
+          href="#top"
+          class="logo"
+          aria-label="Pakistan Student Association home"
+        >
+          <span class="logo-img-wrap" aria-hidden="true">
+            <img
+              class="logo-img"
+              src="images/IMG_2148.jpg"
+              alt=""
+              width="88"
+              height="88"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </span>
+          <span class="logo-stack">
+            <span class="logo-text">Pakistan Student Association</span>
+            <span class="logo-tagline">Community · Culture · Support</span>
+          </span>
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="siteNav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav class="site-nav" id="siteNav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="#board">Board</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#pillars">What We Do</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#join">Join us</a></li>
+            <li class="nav-cta">
+              <a class="btn btn-primary btn-nav" href="#join">Get Involved</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero hero-v3" aria-labelledby="hero-title">
+        <div class="hero-bg hero-bg-v3" aria-hidden="true"></div>
+        <div class="hero-v3-inner">
+          <p class="hero-pill">Building community since 2022</p>
+          <h1 id="hero-title" class="hero-v3-title">
+            <span class="hero-v3-title-top">Your Home</span>
+            <span class="hero-v3-title-bot">Away From</span>
+            <span class="hero-v3-title-bot">Home</span>
+          </h1>
+          <p class="hero-v3-subtitle">
+            The Pakistan Student Association brings together students to
+            celebrate culture, build lifelong friendships, and create
+            unforgettable experiences on campus.
+          </p>
+          <div class="hero-v3-actions">
+            <a class="btn btn-primary btn-hero-primary" href="#join"
+              >Become a Member</a
+            >
+            <a class="btn btn-ghost btn-hero-secondary" href="#events"
+              >Explore Events</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section board" id="board" aria-labelledby="board-heading">
+        <div class="section-inner board-inner">
+          <h2 id="board-heading" class="board-heading">Meet our board</h2>
+          <p class="board-lead" id="boardLead">
+            Ten lanyard slots—wired to Airtable when you add your token and base
+            in <code>airtable-config.js</code>.
+          </p>
+          <p
+            class="board-status"
+            id="boardStatus"
+            role="status"
+            aria-live="polite"
+          ></p>
+          <div
+            class="board-marquee"
+            role="region"
+            aria-label="Board members, scrolling"
+          >
+            <div class="board-track" id="boardTrack">
+              <ul class="board-grid" id="boardGrid"></ul>
+              <ul
+                class="board-grid board-grid-clone"
+                id="boardGridClone"
+                aria-hidden="true"
+              ></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section mission"
+        id="mission"
+        aria-labelledby="mission-heading"
+      >
+        <div class="section-inner">
+          <div class="section-header">
+            <h2 id="mission-heading" class="section-title">Our mission</h2>
+            <p class="section-subtitle">
+              PSA exists so no Pakistani student has to navigate college alone
+              from your first week to graduation and beyond.
+            </p>
+          </div>
+          <div class="mission-grid">
+            <blockquote class="mission-quote">
+              <p>
+                “We celebrate where we’re from while making space for who we’re
+                becoming.”
+              </p>
+              <footer>— PSA executive board</footer>
+            </blockquote>
+            <ul class="mission-points">
+              <li>
+                <strong>Belonging</strong>
+                <span
+                  >Socials, study halls, and peer support rooted in respect and
+                  warmth.</span
+                >
+              </li>
+              <li>
+                <strong>Culture</strong>
+                <span
+                  >Food nights, language circles, and events that honor our
+                  diversity.</span
+                >
+              </li>
+              <li>
+                <strong>Impact</strong>
+                <span
+                  >Partnerships with student services and alumni who open
+                  doors.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section pillars"
+        id="pillars"
+        aria-labelledby="pillars-heading"
+      >
+        <div class="section-inner">
+          <h2 id="pillars-heading" class="section-title visually-hidden">
+            What we do
+          </h2>
+          <p class="pillars-intro">What we do</p>
+          <div class="pillars-grid">
+            <article class="pillar-card" data-reveal>
+              <span class="pillar-index">01</span>
+              <h3>Community</h3>
+              <p>
+                A space where everyone belongs no matter where you’re from or
+                how you got here.
+              </p>
+            </article>
+            <article class="pillar-card" data-reveal>
+              <span class="pillar-index">02</span>
+              <h3>Events</h3>
+              <p>
+                Join us for socials, game nights, cultural celebrations, and
+                more. There’s always something happening to bring people
+                together.
+              </p>
+            </article>
+            <article class="pillar-card" data-reveal>
+              <span class="pillar-index">03</span>
+              <h3>Support</h3>
+              <p>
+                Whether you’re new or returning, PSA helps you feel welcome,
+                connected, and supported throughout your time on campus.
+              </p>
+            </article>
+            <article class="pillar-card" data-reveal>
+              <span class="pillar-index">04</span>
+              <h3>Culture</h3>
+              <p>
+                Music, poetry, sport, and food—shared loudly and proudly, never
+                as a stereotype.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section events"
+        id="events"
+        aria-labelledby="events-heading"
+      >
+        <div class="section-inner">
+          <div class="events-header">
+            <h2 id="events-heading" class="section-title">On the calendar</h2>
+            <p class="section-subtitle">
+              What’s coming up. Save the date and bring a friend.
+            </p>
+          </div>
+          <p
+            class="events-status"
+            id="eventsStatus"
+            role="status"
+            aria-live="polite"
+          ></p>
+          <ul class="event-list" id="eventList"></ul>
+        </div>
+      </section>
+
+      <section class="section join" id="join" aria-labelledby="join-heading">
+        <div class="section-inner join-inner">
+          <div class="join-copy">
+            <h2 id="join-heading" class="section-title">Connect with PSA</h2>
+            <p>
+              The fastest way to stay in the loop is Instagram—then email us for
+              collabs, questions, or anything official.
+            </p>
+            <ul class="join-highlights">
+              <li>Stories &amp; posts for every social and cultural event</li>
+              <li>DMs open for quick questions and hype</li>
+              <li>Email for board business, partnerships, and detailed asks</li>
+            </ul>
+          </div>
+          <div class="join-contact">
+            <a
+              class="join-card join-card-instagram"
+              id="joinInstagram"
+              href="https://www.instagram.com/psa_sfsu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-reveal
+            >
+              <span class="join-card-visual" aria-hidden="true">
+                <svg
+                  class="join-card-svg join-card-svg-ig"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  focusable="false"
+                >
+                  <defs>
+                    <linearGradient
+                      id="psaJoinIgGradient"
+                      x1="0%"
+                      y1="100%"
+                      x2="100%"
+                      y2="0%"
+                    >
+                      <stop offset="0%" stop-color="#ffd600" />
+                      <stop offset="28%" stop-color="#ff543e" />
+                      <stop offset="55%" stop-color="#c837ab" />
+                      <stop offset="100%" stop-color="#515bd4" />
+                    </linearGradient>
+                  </defs>
+                  <rect
+                    width="24"
+                    height="24"
+                    rx="5.5"
+                    fill="url(#psaJoinIgGradient)"
+                  />
+                  <rect
+                    x="5.25"
+                    y="5.25"
+                    width="13.5"
+                    height="13.5"
+                    rx="3"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="1.35"
+                    opacity="0.96"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="3.15"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="1.35"
+                    opacity="0.96"
+                  />
+                  <circle
+                    cx="17"
+                    cy="7.35"
+                    r="0.95"
+                    fill="#fff"
+                    opacity="0.96"
+                  />
+                </svg>
+              </span>
+              <span class="join-card-kicker">Instagram</span>
+              <span class="join-card-title">@psa_sfsu</span>
+              <span class="join-card-desc"
+                >Reels, event reminders, and campus energy—tap in and introduce
+                yourself.</span
+              >
+              <span class="join-card-cta">Open Instagram</span>
+            </a>
+            <a
+              class="join-card join-card-email"
+              id="joinEmail"
+              href="mailto:psa.sfstate@gmail.com"
+              data-reveal
+            >
+              <span class="join-card-visual" aria-hidden="true">
+                <img
+                  class="join-card-logo"
+                  src="images/image.png"
+                  alt=""
+                  width="96"
+                  height="96"
+                  decoding="async"
+                />
+              </span>
+              <span class="join-card-kicker">Email</span>
+              <span class="join-card-title">psa.sfstate@gmail.com</span>
+              <span class="join-card-desc"
+                >Best for formal requests, sponsorships, and longer messages—we
+                read every inbox.</span
+              >
+              <span class="join-card-cta">Send an email</span>
+            </a>
+            <div class="join-strip" data-reveal>
+              <p class="join-strip-lead">While you’re here</p>
+              <div class="join-strip-links">
+                <a href="#events">Upcoming events</a>
+                <span class="join-strip-dot" aria-hidden="true"></span>
+                <a href="#board">Meet the board</a>
+                <span class="join-strip-dot" aria-hidden="true"></span>
+                <a href="#mission">Our mission</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <p class="footer-brand">Pakistan Student Association</p>
+          <nav
+            class="footer-connect"
+            id="footerConnect"
+            aria-label="Social and contact"
+          ></nav>
+        </div>
+        <p class="footer-meta">
+          © <span id="year"></span> PSA. Built with care for students
+          everywhere.
+        </p>
+      </div>
+    </footer>
+
+    <script src="airtable-config.js"></script>
+    <script src="social-config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
